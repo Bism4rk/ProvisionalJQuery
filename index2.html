@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        // 1º método
+        $(document).ready(function () {
+            alert('DOM carregado!!!')
+        });
+
+        // 2º método
+        $(window).on('load', function () {
+            alert('Elementos carregados!!!')
+        });
+    </script>
+    <title>Métodos de Inicialização</title>
+    <style>
+        *{
+            background-color: green;
+        }
+        img{
+            width: 500px;
+            height: 340px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="dating">Hackearam o canal do cara pqp fazueli agr #2</h1>
+    <h2 class="dating">Métodos de inicialização</h2>
+    <ul class="dating">
+        <li class="dating">$(document).ready</li>
+        <li class="dating">$(window).on('load')</li>
+    </ul>
+
+    <p class="REACTION dating">LIVE 1998 Jaguar XJR REACTION</p>
+    <img src="https://goauctionmpc.blob.core.windows.net/stock/1625-11-medium.jpg?v=63828228519050" alt="1998 Jaguar XJR">
+
+    <script>
+        $('.dating').css('color', '#fff')
+        $('.REACTION').css('background-color', '#f00')
+        $('.REACTION').css('width', '240px')
+    </script>
+</body>
+</html>
