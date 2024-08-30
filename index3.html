@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('h1').css('color', '#FF4B00')
+            // $('h1').hide()
+            // $('h1').delay('1000')
+            // $('h1').fadeIn('slow')
+            // $('h1').text('Curso JQuery PontoCanal')
+            // $('h1').css('color', '#FF4B00').hide().delay('1000').fadeIn('slow').text('Curso JQuery PontoCanal')
+
+            // $('h1')
+            // .css('color', '#FF4B00')
+            // .hide().delay('1000')
+            // .fadeIn('slow')
+            // .text('Curso JQuery PontoCanal')
+            // .click(function () { 
+            //     $('body').css('background', '#FFF200')
+            //     $('h1').css('color', '#0F0663')
+            // });
+
+            // $('a').css('color', '#f00')
+            $('a').css({color: 'red', display: 'block', 'font-weight': 'bold'})
+            $('.link2').css('color', 'green')
+            $('#link3').css('color', '#000')
+            $('*').css('padding', '10px')
+            $('h1, #link3').css('border', 'solid 3px blue')
+        });
+    </script>
+    <title>Lógica de desenvolvimento em JQuery</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 class="dating">Você está no canal PontoCanal! (PontoCanal!)</h1>
+    <a href="#">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" id="link3">Link 3</a>
+</body>
+</html>
