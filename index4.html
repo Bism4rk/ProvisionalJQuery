@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h2').css('margin', 0)
+            $('p').css({margin: 0, color: 'blue'})
+            $('.div1').css({'margin-bottom': '20px', 'background-color': '#ccc'})
+            // filhas
+            $('.div1 span').hide().delay(1000).fadeIn(1000).css({color: 'green', 'font-size': '15px'})
+            $('.div1 h2').hide().css({'font-size': '50px', color: 'red'}).fadeIn(800)
+            // filhas diretas do elemento
+            $('.div1 > span').css({color: 'red'})
+            // primeiro elemento depois do selecionado 
+            $('.p1 + p').css({'font-style': 'italic'})
+            $('.p1 ~ p').css({'font-size': '25px', 'text-decoration': 'underline'})
+        });
+    </script>
+    <title>Seletores hierárquicos</title>
+    <style>
+        .div1{
+            border: 3px solid maroon;
+            border-radius: 3px ;
+        }
+        .PPPPP{
+            border: 3px solid navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h2>H2 filho de Div1</h2>
+        <p class="PPPPP">P filho de Div1
+            <span>Span filho de P</span>
+        </p>
+        <span>Span filho direto de Div1</span>
+    </div>
+    <h2>H2 fora de Div1</h2>
+    <p class="p1">P1 fora de Div1</p>
+    <p class="p2">P2 fora de Div1</p>
+    <p class="p3">P3 fora de Div1</p>
+</body>
+</html>
